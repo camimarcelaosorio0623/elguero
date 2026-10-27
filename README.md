@@ -108,7 +108,7 @@ Ver [`.env.example`](.env.example). Todas son **públicas** (terminan en el JS d
 |---|---|---|
 | `VITE_DATA_SOURCE` | `mock` | `mock` = demo con datos de prueba · `http` = API de Agent.IA |
 | `VITE_API_BASE_URL` | vacío | URL base de la API cuando `VITE_DATA_SOURCE=http` |
-| `VITE_WHATSAPP_NUMBER` | vacío | Número oficial. Vacío = botón de WhatsApp oculto |
+| `VITE_WHATSAPP_NUMBER` | vacío | Número oficial. **Pendiente**: vacío = botones visibles con el número provisional `570000000000` (inválido a propósito, no le llega a nadie) |
 | `VITE_SITE_URL` | `https://elgueropro.netlify.app` | URL pública |
 
 ## Capa de servicios y mocks
@@ -145,7 +145,7 @@ Ver `docs/pruebas/` (capturas por tamaño, `responsive.txt`, `rendimiento.txt`, 
 
 ## Puntos pendientes de integración
 
-Detalle en `INTEGRATION_HANDOFF.md`. Resumen: API de carta, reservas, cumpleaños, promociones y eventos; número oficial de WhatsApp; destino de `track()` (analítica/CRM); política de tratamiento de datos (enlace del checkbox).
+Detalle en `INTEGRATION_HANDOFF.md`. Resumen: API de carta, reservas, cumpleaños, promociones y eventos; número oficial de WhatsApp (hoy provisional); destino de `track()` (analítica/CRM); política de tratamiento de datos (enlace del checkbox).
 
 ## Limitaciones conocidas
 

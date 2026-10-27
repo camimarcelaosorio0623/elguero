@@ -50,7 +50,7 @@ Mientras no haya promociones activas, la sección muestra «Las promos del Güer
 
 | Dato | Estado |
 |---|---|
-| Número oficial de WhatsApp | Pendiente → el botón está oculto. Se quitó el 573113624686 de la v1 (no estaba confirmado) |
+| Número oficial de WhatsApp | **Pendiente.** Botón flotante y botón de Ubicación visibles con el número provisional `570000000000` (inválido a propósito, no le escribe a nadie). Se quitó el 573113624686 de la v1 (no estaba confirmado) |
 | Dirección exacta | **No se publica** (no validada). Solo «Laureles · Medellín» + enlace oficial de Google Maps. Se quitó «Carrera 66A #33-05» y el mapa con coordenadas de la v1 |
 | Correo de contacto | No hay |
 | Política de tratamiento de datos (enlace del checkbox) | Falta el documento |
@@ -72,4 +72,4 @@ Mientras no haya promociones activas, la sección muestra «Las promos del Güer
 - Sección «El retador del fin de semana» (dependía de esos productos).
 - Código de reserva ficticio (EG-XXXX) y sello «Apartado».
 - Fotos de Instagram de relleno y la nota de reseñas.
-- Dirección exacta, mapa con coordenadas y WhatsApp no confirmado.
+- Dirección exacta, mapa con coordenadas y el WhatsApp no confirmado de la v1 (reemplazado por un provisional).

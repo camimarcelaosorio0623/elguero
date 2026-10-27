@@ -23,16 +23,10 @@ export function initHeader() {
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 }
 
-/** Botón flotante: se esconde en el hero y en la sección de reservas. */
+/** Botón flotante de WhatsApp (siempre visible) con saludo del Güero. */
 export function initFab() {
   const fab = $('#fab');
   if (!fab) return;
-  const hidden = new Set();
-  const io = new IntersectionObserver((es) => {
-    es.forEach((e) => (e.isIntersecting ? hidden.add(e.target.id) : hidden.delete(e.target.id)));
-    fab.classList.toggle('hide', hidden.size > 0);
-  }, { threshold: 0.15 });
-  ['inicio', 'reservas'].forEach((id) => { const s = document.getElementById(id); if (s) io.observe(s); });
   setTimeout(() => fab.classList.add('hi'), 6000);
   setTimeout(() => fab.classList.remove('hi'), 11000);
 }

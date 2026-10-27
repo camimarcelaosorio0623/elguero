@@ -418,10 +418,9 @@ input[aria-invalid="true"], select[aria-invalid="true"] { border-color: var(--er
 .credit { margin-top: 18px; font-size: .74rem; opacity: .75; max-width: 680px; margin-inline: auto; }
 
 /* ---------- Flotantes ---------- */
-.fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 90; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: var(--oro-g); border: 2px solid var(--verde); box-shadow: 0 12px 30px rgba(0, 0, 0, .5); transition: transform .25s, opacity .3s; }
-.fab svg { width: 26px; height: 26px; fill: var(--verde3); }
+.fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 90; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: #25d366; border: 2px solid var(--oro); box-shadow: 0 12px 30px rgba(0, 0, 0, .5); transition: transform .25s, opacity .3s; }
+.fab svg { width: 30px; height: 30px; fill: #fff; }
 .fab:hover { transform: scale(1.08) rotate(-6deg); }
-.fab.hide { opacity: 0; pointer-events: none; transform: scale(.8); }
 .fab .tip { position: absolute; right: 70px; background: var(--crema); color: var(--tinta); font-family: var(--f-mano); font-weight: 700; font-size: 1.25rem; padding: 6px 12px; border-radius: 12px; white-space: nowrap; box-shadow: 0 8px 20px rgba(0, 0, 0, .3); opacity: 0; transform: translateX(10px); transition: .3s; pointer-events: none; }
 .fab.hi .tip { opacity: 1; transform: none; }
 .demo-flag { position: fixed; left: 0; bottom: 0; z-index: 400; background: var(--oro); color: var(--tinta); font-family: var(--f-slab); font-size: .6rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 5px 12px; border-top-right-radius: 8px; }

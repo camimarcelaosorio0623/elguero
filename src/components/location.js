@@ -17,12 +17,16 @@ export function initHorario() {
 }
 
 /**
- * WhatsApp: preparado, no conectado. Solo aparece si Agent.IA configura
- * VITE_WHATSAPP_NUMBER con el número oficial.
+ * WhatsApp: botón flotante + botón en Ubicación. Visibles siempre; mientras el número
+ * oficial esté pendiente usan el provisional de config (ver env.js).
  */
 export function initWhatsApp() {
-  if (!config.whatsappNumber) return;
-  const link = $('#wa-inline');
-  link.href = `https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent('¡Qué onda, Güero! Tengo una pregunta 🙌')}`;
-  link.hidden = false;
+  const href = `https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent('¡Qué onda, Güero! Tengo una pregunta 🙌')}`;
+  ['#wa-inline', '#fab'].forEach((sel) => {
+    const link = $(sel);
+    if (!link) return;
+    link.href = href;
+    link.hidden = false;
+    if (config.whatsappPending) link.dataset.pending = 'true';
+  });
 }

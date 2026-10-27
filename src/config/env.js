@@ -5,13 +5,19 @@
  */
 const env = import.meta.env;
 const params = new URLSearchParams(window.location.search);
+export const WHATSAPP_PLACEHOLDER = '570000000000';
 
 export const config = {
   /** 'mock' = datos de demostración · 'http' = API de Agent.IA */
   dataSource: env.VITE_DATA_SOURCE === 'http' ? 'http' : 'mock',
   apiBaseUrl: (env.VITE_API_BASE_URL || '').replace(/\/$/, ''),
-  /** Vacío = botón de WhatsApp oculto (canal oficial pendiente de Agent.IA). */
-  whatsappNumber: (env.VITE_WHATSAPP_NUMBER || '').replace(/\D/g, ''),
+  /**
+   * WhatsApp oficial PENDIENTE. Mientras no se configure VITE_WHATSAPP_NUMBER se usa un
+   * número provisional inválido a propósito (570000000000), para que el botón se vea
+   * sin mandarle mensajes a nadie real. Reemplazar por el oficial antes del lanzamiento.
+   */
+  whatsappNumber: (env.VITE_WHATSAPP_NUMBER || WHATSAPP_PLACEHOLDER).replace(/\D/g, ''),
+  whatsappPending: !env.VITE_WHATSAPP_NUMBER,
   siteUrl: env.VITE_SITE_URL || window.location.origin,
   timeZone: 'America/Bogota',
   requestTimeoutMs: 12000,
