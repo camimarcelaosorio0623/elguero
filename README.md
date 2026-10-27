@@ -108,7 +108,7 @@ Ver [`.env.example`](.env.example). Todas son **públicas** (terminan en el JS d
 |---|---|---|
 | `VITE_DATA_SOURCE` | `mock` | `mock` = demo con datos de prueba · `http` = API de Agent.IA |
 | `VITE_API_BASE_URL` | vacío | URL base de la API cuando `VITE_DATA_SOURCE=http` |
-| `VITE_WHATSAPP_NUMBER` | vacío | Número oficial. **Pendiente**: vacío = botones visibles con el número provisional `570000000000` (inválido a propósito, no le llega a nadie) |
+| `VITE_WHATSAPP_NUMBER` | vacío | Número oficial. **Pendiente**: vacío = botones visibles con el número provisional `573113624686` (+57 311 3624686) |
 | `VITE_SITE_URL` | `https://elgueropro.netlify.app` | URL pública |
 
 ## Capa de servicios y mocks

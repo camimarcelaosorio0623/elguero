@@ -5,16 +5,16 @@
  */
 const env = import.meta.env;
 const params = new URLSearchParams(window.location.search);
-export const WHATSAPP_PLACEHOLDER = '570000000000';
+export const WHATSAPP_PLACEHOLDER = '573113624686';
 
 export const config = {
   /** 'mock' = datos de demostración · 'http' = API de Agent.IA */
   dataSource: env.VITE_DATA_SOURCE === 'http' ? 'http' : 'mock',
   apiBaseUrl: (env.VITE_API_BASE_URL || '').replace(/\/$/, ''),
   /**
-   * WhatsApp oficial PENDIENTE. Mientras no se configure VITE_WHATSAPP_NUMBER se usa un
-   * número provisional inválido a propósito (570000000000), para que el botón se vea
-   * sin mandarle mensajes a nadie real. Reemplazar por el oficial antes del lanzamiento.
+   * WhatsApp oficial PENDIENTE. Mientras no se configure VITE_WHATSAPP_NUMBER se usa el
+   * número provisional +57 311 3624686 (indicado por Marce el 27-oct-2026).
+   * Reemplazar por el oficial cuando el cliente lo confirme.
    */
   whatsappNumber: (env.VITE_WHATSAPP_NUMBER || WHATSAPP_PLACEHOLDER).replace(/\D/g, ''),
   whatsappPending: !env.VITE_WHATSAPP_NUMBER,

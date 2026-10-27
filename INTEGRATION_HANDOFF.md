@@ -29,7 +29,7 @@ Reglas que el frontend ya cumple:
 | Cumpleaños | `submitBirthdayRequest()` | Recibir solicitud de cotización | Mock |
 | Promociones | `getPromotions()` | Solo activas (borradores nunca en la API pública) | Mock (2 borradores) |
 | Eventos | `getEvents()` | Solo publicados | Mock (gran apertura) |
-| WhatsApp | `VITE_WHATSAPP_NUMBER` | Número oficial; agente conversacional del lado de ustedes | Botones visibles con número provisional `570000000000` (pendiente) |
+| WhatsApp | `VITE_WHATSAPP_NUMBER` | Número oficial; agente conversacional del lado de ustedes | Botones visibles con número provisional `573113624686` (pendiente del oficial) |
 | CRM / analítica | `track(name, props)` en `src/components/forms.js` | Destino de eventos de conversión | Emite `CustomEvent('guero:track')`, no envía nada |
 
 ## 3. Estructuras de datos
@@ -148,7 +148,7 @@ Los botones principales tienen `data-cta="…"` para medir clics (p. ej. `hero-r
 
 - [ ] Contratos API definitivos (este documento como punto de partida).
 - [ ] CORS de la API para el dominio del sitio (y `localhost:3031` en desarrollo).
-- [ ] **Número oficial de WhatsApp → `VITE_WHATSAPP_NUMBER`** (hoy los botones usan el provisional `570000000000`).
+- [ ] **Número oficial de WhatsApp → `VITE_WHATSAPP_NUMBER`** (hoy los botones usan el provisional `573113624686`).
 - [ ] Destino de `track()` (CRM / analítica).
 - [ ] Enlace a la política de tratamiento de datos (checkbox de los formularios).
 - [ ] Carta de bebidas cargada en el backend (los datos de demo no la incluyen).
