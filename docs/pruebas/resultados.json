@@ -1,0 +1,100 @@
+[
+  {
+    "viewport": "movil-360",
+    "checks": {
+      "sinScrollHorizontal": true,
+      "heroPrimerPantallazo": true,
+      "ctasEnPrimerPantallazo": true,
+      "cartaCargada": true,
+      "frijolesPuercos": true,
+      "sinBirria": true,
+      "medidorVisibleAlBajar": true,
+      "validacionVisible": true,
+      "estadoEnviando": true,
+      "estadoRecibidaNoConfirmada": true,
+      "franquiciasAlFinal": true
+    },
+    "consoleErrors": [],
+    "ok": true
+  },
+  {
+    "viewport": "movil-390",
+    "checks": {
+      "sinScrollHorizontal": true,
+      "heroPrimerPantallazo": true,
+      "ctasEnPrimerPantallazo": true,
+      "cartaCargada": true,
+      "frijolesPuercos": true,
+      "sinBirria": true,
+      "medidorVisibleAlBajar": true,
+      "validacionVisible": true,
+      "estadoEnviando": true,
+      "estadoRecibidaNoConfirmada": true,
+      "franquiciasAlFinal": true
+    },
+    "consoleErrors": [],
+    "ok": true
+  },
+  {
+    "viewport": "tablet-768",
+    "checks": {
+      "sinScrollHorizontal": true,
+      "heroPrimerPantallazo": true,
+      "ctasEnPrimerPantallazo": true,
+      "cartaCargada": true,
+      "frijolesPuercos": true,
+      "sinBirria": true,
+      "medidorVisibleAlBajar": true,
+      "validacionVisible": true,
+      "estadoEnviando": true,
+      "estadoRecibidaNoConfirmada": true,
+      "franquiciasAlFinal": true
+    },
+    "consoleErrors": [],
+    "ok": true
+  },
+  {
+    "viewport": "desktop-1366",
+    "checks": {
+      "sinScrollHorizontal": true,
+      "heroPrimerPantallazo": true,
+      "ctasEnPrimerPantallazo": true,
+      "cartaCargada": true,
+      "frijolesPuercos": true,
+      "sinBirria": true,
+      "medidorVisibleAlBajar": true,
+      "validacionVisible": true,
+      "estadoEnviando": true,
+      "estadoRecibidaNoConfirmada": true,
+      "franquiciasAlFinal": true
+    },
+    "consoleErrors": [],
+    "ok": true
+  },
+  {
+    "viewport": "desktop-1920",
+    "checks": {
+      "sinScrollHorizontal": true,
+      "heroPrimerPantallazo": true,
+      "ctasEnPrimerPantallazo": true,
+      "cartaCargada": true,
+      "frijolesPuercos": true,
+      "sinBirria": true,
+      "medidorVisibleAlBajar": true,
+      "validacionVisible": true,
+      "estadoEnviando": true,
+      "estadoRecibidaNoConfirmada": true,
+      "franquiciasAlFinal": true
+    },
+    "consoleErrors": [],
+    "ok": true
+  },
+  {
+    "viewport": "escenario-error",
+    "ok": true
+  },
+  {
+    "viewport": "promos-borrador",
+    "ok": true
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "el-guero-divino-cantarito-web",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Frontend de El Güero · Divino Cantarito (Laureles, Medellín). Listo para integración con Agent.IA.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "check:responsive": "node scripts/responsive-check.mjs",
+    "check:perf": "node scripts/perf-check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "vite": "^8.3.5"
+  }
+}

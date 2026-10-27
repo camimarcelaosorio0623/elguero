@@ -1,0 +1,7 @@
+✅ movil-360  
+✅ movil-390  
+✅ tablet-768  
+✅ desktop-1366  
+✅ desktop-1920  
+✅ escenario ?mock=error (estado de error y conserva datos)
+✅ promociones: borradores solo en ?preview=socios (2 en preview, 0 públicos)

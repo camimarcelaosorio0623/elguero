@@ -1,0 +1,3 @@
+run 1: LCP 2028 ms · CLS 0.004 · INP 112 ms
+run 2: LCP 2104 ms · CLS 0.008 · INP 88 ms
+run 3: LCP 2088 ms · CLS 0.008 · INP 112 ms
