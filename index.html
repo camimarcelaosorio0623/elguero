@@ -111,7 +111,43 @@
       <div class="canta-grid">
         <div class="canta-ph">
           <!-- Espacio reservado para el futuro modelo 3D del cantarito insignia (ver README §Modelo 3D). -->
-          <div class="frame" data-slot="cantarito-3d"><img src="/img/fotos/guero-cantarito.webp" alt="El Güero sirviendo un Divino Cantarito de barro" loading="lazy" width="800" height="1422"></div>
+          <!-- El cantarito que se llena: tomado de la referencia v5 del equipo (S04). Lo mueve src/components/cantarito.js. -->
+          <div class="frame" data-slot="cantarito-3d">
+            <svg class="cnt" id="cnt" viewBox="20 -28 445 556" role="img" aria-label="El Divino Cantarito se llena capa por capa: tequila, limón, toronja y escarchado de sal de chile, servido en barro">
+              <defs>
+                <pattern id="cn-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.4" fill="#0A0A0A" opacity=".38"/></pattern>
+                <linearGradient id="cn-clay" x1="0" x2="1"><stop offset="0" stop-color="#E07443"/><stop offset=".55" stop-color="#C85830"/><stop offset="1" stop-color="#8E3A1C"/></linearGradient>
+                <linearGradient id="cn-tor" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#F4A261"/><stop offset="1" stop-color="#EA6F78"/></linearGradient>
+                <pattern id="cn-salt" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#B8331F"/><circle cx="2" cy="2" r="1.3" fill="#F7F4EE"/><circle cx="6" cy="5.5" r="1.1" fill="#F2B880"/></pattern>
+                <clipPath id="cn-inner"><path d="M124,132 C80,178 62,252 88,326 C110,384 160,414 210,416 C260,414 310,384 332,326 C358,252 340,178 296,132 Z"/></clipPath>
+                <clipPath id="cn-lvl"><rect id="cn-lvl-r" x="0" y="416" width="460" height="480"/></clipPath>
+                <clipPath id="cn-salt-c"><rect id="cn-salt-r" x="96" y="98" width="0" height="26"/></clipPath>
+              </defs>
+              <path d="M350,176 C432,168 436,316 343,332" fill="none" stroke="#6E2A12" stroke-width="30" stroke-linecap="round"/>
+              <path d="M350,176 C432,168 436,316 343,332" fill="none" stroke="url(#cn-clay)" stroke-width="22" stroke-linecap="round"/>
+              <path d="M110,120 C60,170 40,250 70,330 C95,395 150,430 210,432 C270,430 325,395 350,330 C380,250 360,170 310,120 Z" fill="url(#cn-clay)"/>
+              <path d="M110,120 C60,170 40,250 70,330 C95,395 150,430 210,432 C270,430 325,395 350,330 C380,250 360,170 310,120 Z" fill="url(#cn-dots)" opacity=".55"/>
+              <path d="M124,132 C80,178 62,252 88,326 C110,384 160,414 210,416 C260,414 310,384 332,326 C358,252 340,178 296,132 Z" fill="#1E0C06" stroke="#F2A47A" stroke-width="2.5"/>
+              <g clip-path="url(#cn-inner)">
+                <g clip-path="url(#cn-lvl)">
+                  <rect x="40" y="130" width="340" height="190" fill="url(#cn-tor)"/>
+                  <rect x="40" y="318" width="340" height="28" fill="#A7C957"/>
+                  <rect x="40" y="344" width="340" height="80" fill="#E9C46A"/>
+                  <g fill="none" stroke="#fff" stroke-width="3" opacity=".75">
+                    <rect class="ice" x="150" y="210" width="40" height="38" rx="7" fill="rgba(255,255,255,.28)"/>
+                    <rect class="ice" x="226" y="232" width="36" height="34" rx="7" fill="rgba(255,255,255,.22)" style="animation-delay:-1.2s"/>
+                    <rect class="ice" x="186" y="268" width="34" height="32" rx="7" fill="rgba(255,255,255,.2)" style="animation-delay:-2s"/>
+                  </g>
+                  <g fill="#fff" id="cn-bubs"></g>
+                </g>
+                <g id="cn-wave" style="opacity:0"><path class="wv" d="M40,4 q15,-7 30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 L430,14 L40,14 Z" fill="#FDE3C8" opacity=".92"/></g>
+              </g>
+              <rect x="98" y="110" width="224" height="18" rx="9" fill="url(#cn-clay)" stroke="#6E2A12" stroke-width="2"/>
+              <g clip-path="url(#cn-salt-c)"><rect x="96" y="100" width="228" height="16" rx="8" fill="url(#cn-salt)"/></g>
+              <g id="cn-lime"><g class="drop ld"><g transform="translate(176 -6) rotate(18)"><circle r="26" fill="#C5D86D" stroke="#5E7F22" stroke-width="5"/><circle r="17" fill="none" stroke="#EAF2C4" stroke-width="2"/><path d="M0,-17V17M-17,0H17M-12,-12L12,12M12,-12L-12,12" stroke="#EAF2C4" stroke-width="2"/></g></g></g>
+              <g class="drop sd"><g transform="translate(296 104) rotate(-16)"><path d="M-38,0 A38,38 0 0,1 38,0 Z" fill="#F9C9A6" stroke="#D9534F" stroke-width="5"/><path d="M-29,-2 A29,29 0 0,1 29,-2 Z" fill="#EF6F6C"/><path d="M0,-2V-29M0,-2L-20,-21M0,-2L20,-21M0,-2L-28,-9M0,-2L28,-9" stroke="#F9C9A6" stroke-width="2.4"/></g></g>
+            </svg>
+          </div>
           <div class="medidor" aria-hidden="true"><span>Servido</span><div class="bar"><i></i></div><b>0%</b></div>
         </div>
         <div class="capas" id="capas">
